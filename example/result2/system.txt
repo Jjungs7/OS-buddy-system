@@ -1,0 +1,812 @@
+0 Cycle: Process#0 running code a1 line 1(op 0, arg 1)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+1 Cycle: Process#0 running code a1 line 2(op 5, arg 0)
+RunQueue: 1(c1) 
+SleepList: Empty
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+2 Cycle: Process#1 running code c1 line 1(op 0, arg 2)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+3 Cycle: Process#1 running code c1 line 2(op 1, arg 0)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+4 Cycle: Process#1 running code c1 line 3(op 5, arg 0)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+5 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 1(c1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+6 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 1(c1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+7 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 1(c1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+8 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 0(a1) 1(c1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+9 Cycle: Process#0 running code a1 line 3(op 0, arg 12)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (1:0)
+
+10 Cycle: Process#0 running code a1 line 4(op 0, arg 32)
+RunQueue: 2(b1) 3(b1) 4(b1) 5(e1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#0|---|1#0 1#0|--- --- --- ---|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (1:0) (0:1)
+
+11 Cycle: Process#2 running code b1 line 1(op 3, arg 0)
+RunQueue: 3(b1) 4(b1) 5(e1) 0(a1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+12 Cycle: Process#2 running code b1 line 2(op 3, arg 0)
+RunQueue: 3(b1) 4(b1) 5(e1) 0(a1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+13 Cycle: Process#3 running code b1 line 1(op 3, arg 0)
+RunQueue: 4(b1) 5(e1) 0(a1) 2(b1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+14 Cycle: Process#3 running code b1 line 2(op 3, arg 0)
+RunQueue: 4(b1) 5(e1) 0(a1) 2(b1) 6(f1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+15 Cycle: Process#4 running code b1 line 1(op 3, arg 0)
+RunQueue: 5(e1) 0(a1) 2(b1) 6(f1) 3(b1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+16 Cycle: Process#4 running code b1 line 2(op 3, arg 0)
+RunQueue: 5(e1) 0(a1) 2(b1) 6(f1) 3(b1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+17 Cycle: Process#5 running code e1 line 1(op 0, arg 1)
+RunQueue: 0(a1) 2(b1) 6(f1) 3(b1) 4(b1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2 0#2|
+LRU: (0:2)
+
+18 Cycle: Process#0 running code a1 line 5(op 1, arg 0)
+RunQueue: 2(b1) 6(f1) 3(b1) 4(b1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+19 Cycle: Process#2 running code b1 line 3(op 3, arg 0)
+RunQueue: 6(f1) 3(b1) 4(b1) 0(a1) 
+SleepList: Empty
+IOWait List: 1(c1) 
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+20 Cycle: Process#2 running code b1 line 4(op 4, arg 10)
+RunQueue: 6(f1) 3(b1) 4(b1) 0(a1) 1(c1) 
+SleepList: Empty
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+21 Cycle: Process#6 running code f1 line 1(op 4, arg 10)
+RunQueue: 3(b1) 4(b1) 0(a1) 1(c1) 
+SleepList: 2(b1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+22 Cycle: Process#3 running code b1 line 3(op 3, arg 0)
+RunQueue: 4(b1) 0(a1) 1(c1) 
+SleepList: 2(b1) 6(f1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+23 Cycle: Process#3 running code b1 line 4(op 4, arg 10)
+RunQueue: 4(b1) 0(a1) 1(c1) 
+SleepList: 2(b1) 6(f1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+24 Cycle: Process#4 running code b1 line 3(op 3, arg 0)
+RunQueue: 0(a1) 1(c1) 
+SleepList: 2(b1) 6(f1) 3(b1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+25 Cycle: Process#4 running code b1 line 4(op 4, arg 10)
+RunQueue: 0(a1) 1(c1) 
+SleepList: 2(b1) 6(f1) 3(b1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+26 Cycle: Process#1 running code c1 line 4(op 3, arg 0)
+RunQueue: 0(a1) 
+SleepList: 2(b1) 6(f1) 3(b1) 4(b1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+27 Cycle: Process#1 running code c1 line 5(op 3, arg 0)
+RunQueue: 0(a1) 7(d1) 8(c1) 9(a1) 10(e1) 11(f1) 
+SleepList: 2(b1) 6(f1) 3(b1) 4(b1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+28 Cycle: Process#7 running code d1 line 1(op 5, arg 0)
+RunQueue: 8(c1) 9(a1) 10(e1) 11(f1) 1(c1) 0(a1) 
+SleepList: 2(b1) 6(f1) 3(b1) 4(b1) 
+IOWait List: Empty
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+29 Cycle: Process#8 running code c1 line 1(op 0, arg 2)
+RunQueue: 9(a1) 10(e1) 11(f1) 1(c1) 0(a1) 
+SleepList: 2(b1) 6(f1) 3(b1) 4(b1) 
+IOWait List: 7(d1) 
+|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0)
+
+30 Cycle: Process#8 running code c1 line 2(op 1, arg 0)
+RunQueue: 9(a1) 10(e1) 11(f1) 1(c1) 0(a1) 2(b1) 12(d1) 
+SleepList: 6(f1) 3(b1) 4(b1) 
+IOWait List: 7(d1) 
+|0#0|---|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0)
+
+31 Cycle: Process#9 running code a1 line 1(op 0, arg 1)
+RunQueue: 10(e1) 11(f1) 1(c1) 0(a1) 2(b1) 12(d1) 8(c1) 6(f1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 7(d1) 
+|0#0|---|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0)
+
+32 Cycle: Process#9 running code a1 line 2(op 5, arg 0)
+RunQueue: 10(e1) 11(f1) 1(c1) 0(a1) 2(b1) 12(d1) 8(c1) 6(f1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 7(d1) 
+|0#0|9#0|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0)
+
+33 Cycle: Process#10 running code e1 line 1(op 0, arg 1)
+RunQueue: 11(f1) 1(c1) 0(a1) 2(b1) 12(d1) 8(c1) 6(f1) 3(b1) 
+SleepList: 4(b1) 
+IOWait List: 7(d1) 9(a1) 
+|0#0|9#0|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0)
+
+34 Cycle: Process#11 running code f1 line 1(op 4, arg 10)
+RunQueue: 1(c1) 0(a1) 2(b1) 12(d1) 8(c1) 6(f1) 3(b1) 
+SleepList: 4(b1) 
+IOWait List: 7(d1) 9(a1) 
+|0#0|9#0|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0)
+
+35 Cycle: Process#1 running code c1 line 6(op 0, arg 2)
+RunQueue: 0(a1) 2(b1) 12(d1) 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 
+SleepList: 11(f1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0)
+
+36 Cycle: Process#1 running code c1 line 7(op 1, arg 0)
+RunQueue: 0(a1) 2(b1) 12(d1) 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 
+SleepList: 11(f1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|--- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0) (1:1)
+
+37 Cycle: Process#0 running code a1 line 6(op 2, arg 2)
+RunQueue: 2(b1) 12(d1) 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 1(c1) 
+SleepList: 11(f1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0)
+
+38 Cycle: Process#0 running code a1 line 7(op 1, arg 1)
+RunQueue: 2(b1) 12(d1) 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 1(c1) 
+SleepList: 11(f1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0)
+
+39 Cycle: Process#2 running code b1 line 5(op 3, arg 0)
+RunQueue: 12(d1) 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 1(c1) 0(a1) 
+SleepList: 11(f1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+40 Cycle: Process#2 running code b1 line 6(op 4, arg 20)
+RunQueue: 12(d1) 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 1(c1) 0(a1) 
+SleepList: 11(f1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+41 Cycle: Process#12 running code d1 line 1(op 5, arg 0)
+RunQueue: 8(c1) 6(f1) 3(b1) 4(b1) 7(d1) 1(c1) 0(a1) 
+SleepList: 11(f1) 2(b1) 
+IOWait List: 9(a1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+42 Cycle: Process#8 running code c1 line 3(op 5, arg 0)
+RunQueue: 6(f1) 3(b1) 4(b1) 7(d1) 1(c1) 0(a1) 
+SleepList: 11(f1) 2(b1) 
+IOWait List: 9(a1) 12(d1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+43 Cycle: Process#6 running code f1 line 2(op 5, arg 0)
+RunQueue: 3(b1) 4(b1) 7(d1) 1(c1) 0(a1) 
+SleepList: 11(f1) 2(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+44 Cycle: Process#3 running code b1 line 5(op 3, arg 0)
+RunQueue: 4(b1) 7(d1) 1(c1) 0(a1) 11(f1) 
+SleepList: 2(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+45 Cycle: Process#3 running code b1 line 6(op 4, arg 20)
+RunQueue: 4(b1) 7(d1) 1(c1) 0(a1) 11(f1) 
+SleepList: 2(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+46 Cycle: Process#4 running code b1 line 5(op 3, arg 0)
+RunQueue: 7(d1) 1(c1) 0(a1) 11(f1) 
+SleepList: 2(b1) 3(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+47 Cycle: Process#4 running code b1 line 6(op 4, arg 20)
+RunQueue: 7(d1) 1(c1) 0(a1) 11(f1) 
+SleepList: 2(b1) 3(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+48 Cycle: Process#7 running code d1 line 2(op 3, arg 0)
+RunQueue: 1(c1) 0(a1) 11(f1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+49 Cycle: Process#7 running code d1 line 3(op 0, arg 10)
+RunQueue: 1(c1) 0(a1) 11(f1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|0#0|9#0|8#0 8#0|1#1 1#1|1#0 1#0|--- --- --- --- --- --- --- ---|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:0) (8:0) (9:0) (1:1) (1:0) (0:1)
+
+50 Cycle: Process#1 running code c1 line 8(op 2, arg 1)
+RunQueue: 0(a1) 11(f1) 7(d1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:1) (7:0)
+
+51 Cycle: Process#1 running code c1 line 9(op 4, arg 0)
+RunQueue: 0(a1) 11(f1) 7(d1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 9(a1) 12(d1) 8(c1) 6(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:1) (7:0)
+
+52 Cycle: Process#0 running code a1 line 8(op 1, arg 0)
+RunQueue: 11(f1) 7(d1) 9(a1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1 0#1|
+LRU: (0:1) (7:0)
+
+53 Cycle: Process#0 running code a1 line 9(op 2, arg 1)
+RunQueue: 11(f1) 7(d1) 9(a1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|
+LRU: (7:0) (0:0)
+
+54 Cycle: Process#11 running code f1 line 2(op 5, arg 0)
+RunQueue: 7(d1) 9(a1) 0(a1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|
+LRU: (7:0) (0:0)
+
+55 Cycle: Process#7 running code d1 line 4(op 0, arg 8)
+RunQueue: 9(a1) 0(a1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|
+LRU: (7:0) (0:0)
+
+56 Cycle: Process#7 running code d1 line 5(op 1, arg 0)
+RunQueue: 9(a1) 0(a1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#0|---|--- ---|--- --- --- ---|7#1 7#1 7#1 7#1 7#1 7#1 7#1 7#1|
+LRU: (7:0) (0:0) (7:1)
+
+57 Cycle: Process#9 running code a1 line 3(op 0, arg 12)
+RunQueue: 0(a1) 7(d1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|0#0|---|--- ---|--- --- --- ---|7#1 7#1 7#1 7#1 7#1 7#1 7#1 7#1|
+LRU: (0:0) (7:1) (7:0)
+
+58 Cycle: Process#9 running code a1 line 4(op 0, arg 32)
+RunQueue: 0(a1) 7(d1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0 7#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (7:0) (9:1)
+
+59 Cycle: Process#0 running code a1 line 10(op 2, arg 0)
+RunQueue: 7(d1) 9(a1) 
+SleepList: 2(b1) 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2|
+LRU: (9:2)
+
+60 Cycle: Process#7 running code d1 line 6(op 2, arg 1)
+RunQueue: 9(a1) 2(b1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2|
+LRU: (9:2)
+
+61 Cycle: Process#7 running code d1 line 7(op 2, arg 0)
+RunQueue: 9(a1) 2(b1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 6(f1) 11(f1) 
+|9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2|
+LRU: (9:2)
+
+62 Cycle: Process#9 running code a1 line 5(op 1, arg 0)
+RunQueue: 2(b1) 7(d1) 6(f1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 11(f1) 
+|9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2 9#2|
+LRU: (9:2)
+
+63 Cycle: Process#9 running code a1 line 6(op 2, arg 2)
+RunQueue: 2(b1) 7(d1) 6(f1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 11(f1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0)
+
+64 Cycle: Process#2 running code b1 line 7(op 3, arg 0)
+RunQueue: 7(d1) 6(f1) 9(a1) 
+SleepList: 3(b1) 4(b1) 
+IOWait List: 12(d1) 8(c1) 11(f1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0)
+
+65 Cycle: Process#2 running code b1 line 8(op 5, arg 0)
+RunQueue: 7(d1) 6(f1) 9(a1) 3(b1) 
+SleepList: 4(b1) 
+IOWait List: 12(d1) 8(c1) 11(f1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0)
+
+66 Cycle: Process#7 running code d1 line 8(op 5, arg 0)
+RunQueue: 6(f1) 9(a1) 3(b1) 
+SleepList: 4(b1) 
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0)
+
+67 Cycle: Process#6 running code f1 line 3(op 3, arg 0)
+RunQueue: 9(a1) 3(b1) 4(b1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0)
+
+68 Cycle: Process#6 running code f1 line 4(op 0, arg 5)
+RunQueue: 9(a1) 3(b1) 4(b1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0)
+
+69 Cycle: Process#9 running code a1 line 7(op 1, arg 1)
+RunQueue: 3(b1) 4(b1) 6(f1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0) (6:0)
+
+70 Cycle: Process#9 running code a1 line 8(op 1, arg 0)
+RunQueue: 3(b1) 4(b1) 6(f1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (9:0) (6:0) (9:1)
+
+71 Cycle: Process#3 running code b1 line 7(op 3, arg 0)
+RunQueue: 4(b1) 6(f1) 9(a1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (6:0) (9:1) (9:0)
+
+72 Cycle: Process#3 running code b1 line 8(op 5, arg 0)
+RunQueue: 4(b1) 6(f1) 9(a1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (6:0) (9:1) (9:0)
+
+73 Cycle: Process#4 running code b1 line 7(op 3, arg 0)
+RunQueue: 6(f1) 9(a1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (6:0) (9:1) (9:0)
+
+74 Cycle: Process#4 running code b1 line 8(op 5, arg 0)
+RunQueue: 6(f1) 9(a1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (6:0) (9:1) (9:0)
+
+75 Cycle: Process#6 running code f1 line 5(op 2, arg 0)
+RunQueue: 9(a1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|9#0|---|--- ---|--- --- --- ---|6#0 6#0 6#0 6#0 6#0 6#0 6#0 6#0|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (6:0) (9:1) (9:0)
+
+76 Cycle: Process#6 running code f1 line 6(op 0, arg 1)
+RunQueue: 9(a1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|9#0|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (9:1) (9:0)
+
+77 Cycle: Process#9 running code a1 line 9(op 2, arg 1)
+RunQueue: 6(f1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|9#0|6#1|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1 9#1|
+LRU: (9:1) (9:0) (6:1)
+
+78 Cycle: Process#9 running code a1 line 10(op 2, arg 0)
+RunQueue: 6(f1) 
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|9#0|6#1|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (9:0) (6:1)
+
+79 Cycle: Process#6 running code f1 line 7(op 2, arg 1)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|---|6#1|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (6:1)
+
+80 Cycle: Process#6 running code f1 line 8(op 0, arg 3)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+81 Cycle: Process#6 running code f1 line 9(op 2, arg 2)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|6#2 6#2 6#2 6#2|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (6:2)
+
+82 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+83 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+84 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+85 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+86 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+87 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+88 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+89 Cycle: 
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 12(d1) 8(c1) 11(f1) 2(b1) 3(b1) 4(b1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+90 Cycle: Process#4 running code b1 line 9(op 0, arg 10)
+RunQueue: 3(b1) 12(d1) 2(b1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+91 Cycle: Process#4 running code b1 line 10(op 0, arg 12)
+RunQueue: 3(b1) 12(d1) 2(b1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0 4#0|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (4:0)
+
+92 Cycle: Process#3 running code b1 line 9(op 0, arg 10)
+RunQueue: 12(d1) 2(b1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+93 Cycle: Process#3 running code b1 line 10(op 0, arg 12)
+RunQueue: 12(d1) 2(b1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0 3#0|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (3:0)
+
+94 Cycle: Process#12 running code d1 line 2(op 3, arg 0)
+RunQueue: 2(b1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+95 Cycle: Process#12 running code d1 line 3(op 0, arg 10)
+RunQueue: 2(b1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+96 Cycle: Process#2 running code b1 line 9(op 0, arg 10)
+RunQueue: 12(d1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (12:0)
+
+97 Cycle: Process#2 running code b1 line 10(op 0, arg 12)
+RunQueue: 12(d1) 
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0|2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0 2#0|
+LRU: (12:0) (2:0)
+
+98 Cycle: Process#12 running code d1 line 4(op 0, arg 8)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+99 Cycle: Process#12 running code d1 line 5(op 1, arg 0)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: 8(c1) 11(f1) 
+|12#1 12#1 12#1 12#1 12#1 12#1 12#1 12#1|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (12:1)
+
+100 Cycle: Process#12 running code d1 line 6(op 2, arg 1)
+RunQueue: 8(c1) 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|12#1 12#1 12#1 12#1 12#1 12#1 12#1 12#1|--- --- --- --- --- --- --- ---|12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0|
+LRU: (12:1) (12:0)
+
+101 Cycle: Process#12 running code d1 line 7(op 2, arg 0)
+RunQueue: 8(c1) 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0 12#0|
+LRU: (12:0)
+
+102 Cycle: Process#8 running code c1 line 4(op 3, arg 0)
+RunQueue: 11(f1) 12(d1) 
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+103 Cycle: Process#8 running code c1 line 5(op 3, arg 0)
+RunQueue: 11(f1) 12(d1) 
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+104 Cycle: Process#11 running code f1 line 3(op 3, arg 0)
+RunQueue: 12(d1) 8(c1) 
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+105 Cycle: Process#11 running code f1 line 4(op 0, arg 5)
+RunQueue: 12(d1) 8(c1) 
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+106 Cycle: Process#12 running code d1 line 8(op 5, arg 0)
+RunQueue: 8(c1) 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|11#0 11#0 11#0 11#0 11#0 11#0 11#0 11#0|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (11:0)
+
+107 Cycle: Process#8 running code c1 line 6(op 0, arg 2)
+RunQueue: 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|11#0 11#0 11#0 11#0 11#0 11#0 11#0 11#0|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (11:0)
+
+108 Cycle: Process#8 running code c1 line 7(op 1, arg 0)
+RunQueue: 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|11#0 11#0 11#0 11#0 11#0 11#0 11#0 11#0|8#1 8#1|--- ---|--- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (11:0) (8:1)
+
+109 Cycle: Process#11 running code f1 line 5(op 2, arg 0)
+RunQueue: 8(c1) 
+SleepList: Empty
+IOWait List: Empty
+|11#0 11#0 11#0 11#0 11#0 11#0 11#0 11#0|8#1 8#1|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (11:0) (8:1) (8:0)
+
+110 Cycle: Process#11 running code f1 line 6(op 0, arg 1)
+RunQueue: 8(c1) 
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- ---|8#1 8#1|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (8:1) (8:0)
+
+111 Cycle: Process#8 running code c1 line 8(op 2, arg 1)
+RunQueue: 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|11#1|---|--- ---|--- --- --- ---|8#1 8#1|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (8:1) (8:0) (11:1)
+
+112 Cycle: Process#8 running code c1 line 9(op 4, arg 0)
+RunQueue: 11(f1) 
+SleepList: Empty
+IOWait List: Empty
+|11#1|---|--- ---|--- --- --- ---|--- ---|8#0 8#0|--- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (8:0) (11:1)
+
+113 Cycle: Process#11 running code f1 line 7(op 2, arg 1)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: Empty
+|11#1|---|--- ---|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (11:1)
+
+114 Cycle: Process#11 running code f1 line 8(op 0, arg 3)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: Empty
+|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU:
+
+115 Cycle: Process#11 running code f1 line 9(op 2, arg 2)
+RunQueue: Empty
+SleepList: Empty
+IOWait List: Empty
+|11#2 11#2 11#2 11#2|--- --- --- ---|--- --- --- --- --- --- --- ---|--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+LRU: (11:2)
+
